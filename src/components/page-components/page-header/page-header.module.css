@@ -1,0 +1,4 @@
+.pageHeader {
+	height: var(--page-header-height);
+	background-color: mediumslateblue;
+}

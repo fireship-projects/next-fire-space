@@ -1,6 +1,7 @@
 :root {
 	--background: #ffffff;
 	--foreground: #171717;
+	--page-header-height: 70px;
 }
 
 @media (prefers-color-scheme: dark) {

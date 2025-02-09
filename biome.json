@@ -28,5 +28,24 @@
 		"formatter": {
 			"quoteStyle": "single"
 		}
+	},
+	"css": {
+		"parser": {
+			"cssModules": true
+		},
+		"formatter": {
+			"enabled": true
+		},
+		"linter": {
+			"enabled": true
+		}
+	},
+	"json": {
+		"formatter": {
+			"enabled": true
+		},
+		"linter": {
+			"enabled": true
+		}
 	}
 }

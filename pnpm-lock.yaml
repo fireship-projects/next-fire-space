@@ -10,7 +10,10 @@ importers:
     dependencies:
       next:
         specifier: 15.1.6
-        version: 15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 15.1.6(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      next-auth:
+        specifier: 5.0.0-beta.25
+        version: 5.0.0-beta.25(next@15.1.6(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -30,6 +33,9 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.0.3(@types/react@19.0.8)
+      babel-plugin-react-compiler:
+        specifier: 19.0.0-beta-714736e-20250131
+        version: 19.0.0-beta-714736e-20250131
       lefthook:
         specifier: ^1.10.10
         version: 1.10.10
@@ -38,6 +44,32 @@ importers:
         version: 5.7.3
 
 packages:
+
+  '@auth/core@0.37.2':
+    resolution: {integrity: sha512-kUvzyvkcd6h1vpeMAojK2y7+PAV5H+0Cc9+ZlKYDFhDY31AlvsB+GW5vNO4qE3Y07KeQgvNO9U0QUx/fN62kBw==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@auth/core/-/core-0.37.2.tgz}
+    peerDependencies:
+      '@simplewebauthn/browser': ^9.0.1
+      '@simplewebauthn/server': ^9.0.2
+      nodemailer: ^6.8.0
+    peerDependenciesMeta:
+      '@simplewebauthn/browser':
+        optional: true
+      '@simplewebauthn/server':
+        optional: true
+      nodemailer:
+        optional: true
+
+  '@babel/helper-string-parser@7.25.9':
+    resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@babel/helper-string-parser/-/helper-string-parser-7.25.9.tgz}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/helper-validator-identifier@7.25.9':
+    resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@babel/helper-validator-identifier/-/helper-validator-identifier-7.25.9.tgz}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/types@7.26.8':
+    resolution: {integrity: sha512-eUuWapzEGWFEpHFxgEaBG8e3n6S8L3MSu0oda755rOfabWPnh0Our1AozNFVUxGFIhbKgd1ksprsoDGMinTOTA==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@babel/types/-/types-7.26.8.tgz}
+    engines: {node: '>=6.9.0'}
 
   '@biomejs/biome@1.9.4':
     resolution: {integrity: sha512-1rkd7G70+o9KkTn5KLmDYXihGoTaIGO9PIIN2ZB7UJxFrWw04CZHPYiMRjYsaDvVV7hP1dYNRLxSANLaBFGpog==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@biomejs/biome/-/biome-1.9.4.tgz}
@@ -251,11 +283,17 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@panva/hkdf@1.2.1':
+    resolution: {integrity: sha512-6oclG6Y3PiDFcoyk8srjLfVKyMfVCKJ27JwNPViuXziFpmdz+MZnZN/aKY0JGXgYuO/VghU0jcOAZgWXZ1Dmrw==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@panva/hkdf/-/hkdf-1.2.1.tgz}
+
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@swc/counter/-/counter-0.1.3.tgz}
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@swc/helpers/-/helpers-0.5.15.tgz}
+
+  '@types/cookie@0.6.0':
+    resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@types/cookie/-/cookie-0.6.0.tgz}
 
   '@types/node@20.17.17':
     resolution: {integrity: sha512-/WndGO4kIfMicEQLTi/mDANUu/iVUhT7KboZPdEqqHQ4aTS+3qT3U5gIqWDFV+XouorjfgGqvKILJeHhuQgFYg==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@types/node/-/node-20.17.17.tgz}
@@ -267,6 +305,9 @@ packages:
 
   '@types/react@19.0.8':
     resolution: {integrity: sha512-9P/o1IGdfmQxrujGbIMDyYaaCykhLKc0NGCtYcECNUr9UAaDe4gwvV9bR6tvd5Br1SG0j+PBpbKr2UYY8CwqSw==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@types/react/-/react-19.0.8.tgz}
+
+  babel-plugin-react-compiler@19.0.0-beta-714736e-20250131:
+    resolution: {integrity: sha512-frj2l6fRWVi26iw9WthFKyFyE4u5ZSHH3KdKiscOOwpz210seTtwnp0QbJmi8Zoa5HK7Fk2fH40JffN2y8GvLg==, tarball: https://packages.atlassian.com/api/npm/npm-remote/babel-plugin-react-compiler/-/babel-plugin-react-compiler-19.0.0-beta-714736e-20250131.tgz}
 
   busboy@1.6.0:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==, tarball: https://packages.atlassian.com/api/npm/npm-remote/busboy/-/busboy-1.6.0.tgz}
@@ -292,6 +333,10 @@ packages:
     resolution: {integrity: sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==, tarball: https://packages.atlassian.com/api/npm/npm-remote/color/-/color-4.2.3.tgz}
     engines: {node: '>=12.5.0'}
 
+  cookie@0.7.1:
+    resolution: {integrity: sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w==, tarball: https://packages.atlassian.com/api/npm/npm-remote/cookie/-/cookie-0.7.1.tgz}
+    engines: {node: '>= 0.6'}
+
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==, tarball: https://packages.atlassian.com/api/npm/npm-remote/csstype/-/csstype-3.1.3.tgz}
 
@@ -301,6 +346,9 @@ packages:
 
   is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==, tarball: https://packages.atlassian.com/api/npm/npm-remote/is-arrayish/-/is-arrayish-0.3.2.tgz}
+
+  jose@5.9.6:
+    resolution: {integrity: sha512-AMlnetc9+CV9asI19zHmrgS/WYsWUwCn2R7RzlbJWD7F9eWYUTGyBmU9o6PxngtLGOiDGPRu+Uc4fhKzbpteZQ==, tarball: https://packages.atlassian.com/api/npm/npm-remote/jose/-/jose-5.9.6.tgz}
 
   lefthook-darwin-arm64@1.10.10:
     resolution: {integrity: sha512-hEypKdwWpmNSl4Q8eJxgmlGb2ybJj1+W5/v13Mxc+ApEmjbpNiJzPcdjC9zyaMEpPK4EybiHy8g5ZC0dLOwkpA==, tarball: https://packages.atlassian.com/api/npm/npm-remote/lefthook-darwin-arm64/-/lefthook-darwin-arm64-1.10.10.tgz}
@@ -361,6 +409,22 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  next-auth@5.0.0-beta.25:
+    resolution: {integrity: sha512-2dJJw1sHQl2qxCrRk+KTQbeH+izFbGFPuJj5eGgBZFYyiYYtvlrBeUw1E/OJJxTRjuxbSYGnCTkUIRsIIW0bog==, tarball: https://packages.atlassian.com/api/npm/npm-remote/next-auth/-/next-auth-5.0.0-beta.25.tgz}
+    peerDependencies:
+      '@simplewebauthn/browser': ^9.0.1
+      '@simplewebauthn/server': ^9.0.2
+      next: ^14.0.0-0 || ^15.0.0-0
+      nodemailer: ^6.6.5
+      react: ^18.2.0 || ^19.0.0-0
+    peerDependenciesMeta:
+      '@simplewebauthn/browser':
+        optional: true
+      '@simplewebauthn/server':
+        optional: true
+      nodemailer:
+        optional: true
+
   next@15.1.6:
     resolution: {integrity: sha512-Hch4wzbaX0vKQtalpXvUiw5sYivBy4cm5rzUKrBnUB/y436LGrvOUqYvlSeNVCWFO/770gDlltR9gqZH62ct4Q==, tarball: https://packages.atlassian.com/api/npm/npm-remote/next/-/next-15.1.6.tgz}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
@@ -382,12 +446,26 @@ packages:
       sass:
         optional: true
 
+  oauth4webapi@3.1.4:
+    resolution: {integrity: sha512-eVfN3nZNbok2s/ROifO0UAc5G8nRoLSbrcKJ09OqmucgnhXEfdIQOR4gq1eJH1rN3gV7rNw62bDEgftsgFtBEg==, tarball: https://packages.atlassian.com/api/npm/npm-remote/oauth4webapi/-/oauth4webapi-3.1.4.tgz}
+
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==, tarball: https://packages.atlassian.com/api/npm/npm-remote/picocolors/-/picocolors-1.1.1.tgz}
 
   postcss@8.4.31:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==, tarball: https://packages.atlassian.com/api/npm/npm-remote/postcss/-/postcss-8.4.31.tgz}
     engines: {node: ^10 || ^12 || >=14}
+
+  preact-render-to-string@5.2.3:
+    resolution: {integrity: sha512-aPDxUn5o3GhWdtJtW0svRC2SS/l8D9MAgo2+AWml+BhDImb27ALf04Q2d+AHqUUOc6RdSXFIBVa2gxzgMKgtZA==, tarball: https://packages.atlassian.com/api/npm/npm-remote/preact-render-to-string/-/preact-render-to-string-5.2.3.tgz}
+    peerDependencies:
+      preact: '>=10'
+
+  preact@10.11.3:
+    resolution: {integrity: sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==, tarball: https://packages.atlassian.com/api/npm/npm-remote/preact/-/preact-10.11.3.tgz}
+
+  pretty-format@3.8.0:
+    resolution: {integrity: sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==, tarball: https://packages.atlassian.com/api/npm/npm-remote/pretty-format/-/pretty-format-3.8.0.tgz}
 
   react-dom@19.0.0:
     resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==, tarball: https://packages.atlassian.com/api/npm/npm-remote/react-dom/-/react-dom-19.0.0.tgz}
@@ -446,6 +524,25 @@ packages:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==, tarball: https://packages.atlassian.com/api/npm/npm-remote/undici-types/-/undici-types-6.19.8.tgz}
 
 snapshots:
+
+  '@auth/core@0.37.2':
+    dependencies:
+      '@panva/hkdf': 1.2.1
+      '@types/cookie': 0.6.0
+      cookie: 0.7.1
+      jose: 5.9.6
+      oauth4webapi: 3.1.4
+      preact: 10.11.3
+      preact-render-to-string: 5.2.3(preact@10.11.3)
+
+  '@babel/helper-string-parser@7.25.9': {}
+
+  '@babel/helper-validator-identifier@7.25.9': {}
+
+  '@babel/types@7.26.8':
+    dependencies:
+      '@babel/helper-string-parser': 7.25.9
+      '@babel/helper-validator-identifier': 7.25.9
 
   '@biomejs/biome@1.9.4':
     optionalDependencies:
@@ -588,11 +685,15 @@ snapshots:
   '@next/swc-win32-x64-msvc@15.1.6':
     optional: true
 
+  '@panva/hkdf@1.2.1': {}
+
   '@swc/counter@0.1.3': {}
 
   '@swc/helpers@0.5.15':
     dependencies:
       tslib: 2.8.1
+
+  '@types/cookie@0.6.0': {}
 
   '@types/node@20.17.17':
     dependencies:
@@ -605,6 +706,10 @@ snapshots:
   '@types/react@19.0.8':
     dependencies:
       csstype: 3.1.3
+
+  babel-plugin-react-compiler@19.0.0-beta-714736e-20250131:
+    dependencies:
+      '@babel/types': 7.26.8
 
   busboy@1.6.0:
     dependencies:
@@ -634,6 +739,8 @@ snapshots:
       color-string: 1.9.1
     optional: true
 
+  cookie@0.7.1: {}
+
   csstype@3.1.3: {}
 
   detect-libc@2.0.3:
@@ -641,6 +748,8 @@ snapshots:
 
   is-arrayish@0.3.2:
     optional: true
+
+  jose@5.9.6: {}
 
   lefthook-darwin-arm64@1.10.10:
     optional: true
@@ -687,7 +796,13 @@ snapshots:
 
   nanoid@3.3.8: {}
 
-  next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  next-auth@5.0.0-beta.25(next@15.1.6(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0):
+    dependencies:
+      '@auth/core': 0.37.2
+      next: 15.1.6(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react: 19.0.0
+
+  next@15.1.6(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       '@next/env': 15.1.6
       '@swc/counter': 0.1.3
@@ -707,10 +822,13 @@ snapshots:
       '@next/swc-linux-x64-musl': 15.1.6
       '@next/swc-win32-arm64-msvc': 15.1.6
       '@next/swc-win32-x64-msvc': 15.1.6
+      babel-plugin-react-compiler: 19.0.0-beta-714736e-20250131
       sharp: 0.33.5
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+
+  oauth4webapi@3.1.4: {}
 
   picocolors@1.1.1: {}
 
@@ -719,6 +837,15 @@ snapshots:
       nanoid: 3.3.8
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  preact-render-to-string@5.2.3(preact@10.11.3):
+    dependencies:
+      preact: 10.11.3
+      pretty-format: 3.8.0
+
+  preact@10.11.3: {}
+
+  pretty-format@3.8.0: {}
 
   react-dom@19.0.0(react@19.0.0):
     dependencies:

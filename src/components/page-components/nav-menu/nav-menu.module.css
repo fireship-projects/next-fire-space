@@ -1,0 +1,21 @@
+.nav {
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	padding-inline-start: 5ch;
+}
+
+.links {
+	list-style: none;
+	display: flex;
+	margin-inline-end: 10ch;
+}
+
+.links > li {
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	padding: 2ch;
+}
