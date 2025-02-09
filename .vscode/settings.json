@@ -1,0 +1,67 @@
+{
+	// biome
+	"biome.rename": true,
+
+	// common editor
+	"editor.codeActionsOnSave": {
+		// biome specific
+		"quickfix.biome": "explicit",
+		"source.organizeImports.biome": "explicit"
+	},
+
+	// Other Langs
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.formatOnSave": true,
+
+	// JS/JSX
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true,
+
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit",
+			"source.removeUnusedImports": "explicit",
+			"source.sortImports": "explicit"
+		}
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true,
+
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit",
+			"source.removeUnusedImports": "explicit",
+			"source.sortImports": "explicit"
+		}
+	},
+
+	// TS/TSX
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true,
+
+		"editor.codeActionsOnSave": {
+			"source.addMissingImports.ts": "explicit",
+			"source.fixAll.ts": "explicit",
+			"source.removeUnused.ts": "explicit",
+
+			"source.organizeImports.biome": "explicit",
+			"source.removeUnusedImports": "explicit",
+			"source.sortImports": "explicit"
+		}
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true,
+
+		"editor.codeActionsOnSave": {
+			"source.addMissingImports.ts": "explicit",
+			"source.fixAll.ts": "explicit",
+			"source.removeUnused.ts": "explicit",
+
+			"source.organizeImports.biome": "explicit",
+			"source.removeUnusedImports": "explicit",
+			"source.sortImports": "explicit"
+		}
+	}
+}
