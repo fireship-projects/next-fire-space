@@ -4,6 +4,7 @@ import './globals.css';
 
 import PageContainer from '@/components/page-components/page-container';
 import PageHeader from '@/components/page-components/page-header';
+import AuthProvider from '@/modules/auth/auth-provider';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -26,11 +27,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable}`}>
-				<PageHeader />
-				<PageContainer>{children}</PageContainer>
-			</body>
-		</html>
+		<AuthProvider>
+			<html lang="en">
+				<body className={`${geistSans.variable} ${geistMono.variable}`}>
+					<PageHeader />
+					<PageContainer>{children}</PageContainer>
+				</body>
+			</html>
+		</AuthProvider>
 	);
 }

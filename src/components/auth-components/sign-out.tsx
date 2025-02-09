@@ -1,16 +1,9 @@
-import { signOut } from '@/modules/auth/auth';
+import { signOut } from 'next-auth/react';
 
 export function SignOut() {
 	return (
-		<form
-			action={async () => {
-				'use server';
-				await signOut();
-			}}
-		>
-			<button className="btn btn-secondary" type="submit">
-				Sign Out
-			</button>
-		</form>
+		<button onClick={() => signOut()} className="btn btn-secondary" type="submit">
+			Sign Out
+		</button>
 	);
 }

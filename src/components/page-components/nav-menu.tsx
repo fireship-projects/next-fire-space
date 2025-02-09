@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import SignIn from '@/components/auth-components/sign-in';
+import { UserStatus } from './user-status';
 
 const menuItems = [
 	{ label: 'About', path: '/about' },
@@ -22,7 +22,7 @@ export default function NavMenu() {
 					</li>
 				))}
 			</ul>
-			<SignIn />
+			<UserStatus />
 		</nav>
 	);
 }
