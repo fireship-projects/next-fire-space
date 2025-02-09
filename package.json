@@ -14,10 +14,13 @@
 		"check:ci:github": "biome ci --reporter=github"
 	},
 	"dependencies": {
+		"@tailwindcss/postcss": "^4.0.5",
 		"next": "15.1.6",
 		"next-auth": "5.0.0-beta.25",
+		"postcss": "^8.5.1",
 		"react": "^19.0.0",
-		"react-dom": "^19.0.0"
+		"react-dom": "^19.0.0",
+		"tailwindcss": "^4.0.5"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
