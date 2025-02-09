@@ -27,9 +27,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} dark:bg-gray-800 dark:text-gray-300`}
-			>
+			<body className={`${geistSans.variable} ${geistMono.variable}`}>
 				<PageHeader />
 				<PageContainer>{children}</PageContainer>
 			</body>

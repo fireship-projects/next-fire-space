@@ -11,11 +11,11 @@ const menuItems = [
 
 export default function NavMenu() {
 	return (
-		<nav className="flex items-center justify-between p-4">
-			<Link href="/">
+		<nav className="navbar">
+			<Link href="/" className="navbar-start">
 				<Image src="/globe.svg" width={30} height={30} alt="NextSpace Logo" />
 			</Link>
-			<ul className="flex list-none margin-block-end-2">
+			<ul className="navbar-end flex">
 				{menuItems.map((item) => (
 					<li key={item.label} className="flex p-2 margin-inline-end-2">
 						<Link href={item.path}>{item.label}</Link>

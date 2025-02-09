@@ -3,5 +3,5 @@ export default function PageContainer({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	return <main className="p-4">{children}</main>;
+	return <main className="min-h-[calc(100vh-64px)]">{children}</main>;
 }
