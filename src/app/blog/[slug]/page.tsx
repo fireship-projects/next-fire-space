@@ -5,9 +5,9 @@ interface Post {
 }
 
 interface Props {
-	params: {
+	params: Promise<{
 		slug: string;
-	};
+	}>;
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -27,14 +27,3 @@ export default async function BlogPostPage({ params }: Props) {
 		</div>
 	);
 }
-
-export async function generateStaticParams() {
-	const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/content`);
-	const posts: Post[] = await response.json();
-
-	return posts.map((post) => ({
-		slug: post.slug,
-	}));
-}
-
-export const revalidate = 420;
