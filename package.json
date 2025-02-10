@@ -12,7 +12,8 @@
 		"check": "biome check --write .",
 		"check:ci": "biome ci",
 		"check:ci:github": "biome ci --reporter=github",
-		"db:migragte": "prisma migrate dev"
+		"db:migragte": "prisma migrate dev",
+		"postinstall": "prisma generate"
 	},
 	"dependencies": {
 		"@auth/prisma-adapter": "^2.7.4",
