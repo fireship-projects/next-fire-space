@@ -1,5 +1,7 @@
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+
 import './globals.css';
 
 import PageContainer from '@/components/page-components/page-container';
@@ -28,6 +30,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<AuthProvider>
+			<Analytics />
 			<html lang="en">
 				<body className={`${geistSans.variable} ${geistMono.variable}`}>
 					<PageHeader />
