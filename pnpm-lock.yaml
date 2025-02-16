@@ -14,6 +14,9 @@ importers:
       '@prisma/client':
         specifier: 6.3.1
         version: 6.3.1(prisma@6.3.1(typescript@5.7.3))(typescript@5.7.3)
+      '@sindresorhus/is':
+        specifier: ^7.0.1
+        version: 7.0.1
       '@tailwindcss/postcss':
         specifier: ^4.0.5
         version: 4.0.5
@@ -344,6 +347,10 @@ packages:
 
   '@prisma/get-platform@6.3.1':
     resolution: {integrity: sha512-AYLq6Hk9xG73JdLWJ3Ip9Wg/vlP7xPvftGBalsPzKDOHr/ImhwJ09eS8xC2vNT12DlzGxhfk8BkL0ve2OriNhQ==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@prisma/get-platform/-/get-platform-6.3.1.tgz}
+
+  '@sindresorhus/is@7.0.1':
+    resolution: {integrity: sha512-QWLl2P+rsCJeofkDNIT3WFmb6NrRud1SUYW8dIhXK/46XFV8Q/g7Bsvib0Askb0reRLe+WYPeeE+l5cH7SlkuQ==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@sindresorhus/is/-/is-7.0.1.tgz}
+    engines: {node: '>=18'}
 
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@swc/counter/-/counter-0.1.3.tgz}
@@ -997,6 +1004,8 @@ snapshots:
   '@prisma/get-platform@6.3.1':
     dependencies:
       '@prisma/debug': 6.3.1
+
+  '@sindresorhus/is@7.0.1': {}
 
   '@swc/counter@0.1.3': {}
 

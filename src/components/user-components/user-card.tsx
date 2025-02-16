@@ -1,8 +1,8 @@
-type Props = {
+interface Props {
 	email: string;
 	name: string;
 	avatarUrl: string;
-};
+}
 
 export function UserCard(props: Props) {
 	return (

@@ -18,6 +18,7 @@
 	"dependencies": {
 		"@auth/prisma-adapter": "^2.7.4",
 		"@prisma/client": "6.3.1",
+		"@sindresorhus/is": "^7.0.1",
 		"@tailwindcss/postcss": "^4.0.5",
 		"@vercel/analytics": "^1.4.1",
 		"next": "15.1.6",

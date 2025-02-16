@@ -10,5 +10,5 @@ export function UserStatus() {
 
 	console.log(session, status);
 
-	return status === 'authenticated' ? <SignOut /> : <SignIn />;
+	return status === 'authenticated' ? <SignOut avatarUrl={session.user?.image} /> : <SignIn />;
 }
