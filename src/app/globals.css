@@ -1,6 +1,2 @@
 @import "tailwindcss";
-@plugin "daisyui" {
-	themes: nord --default, dracula ---prefersdark;
-}
-
-@custom-variant dark (&:where([data-theme=night], [data-theme=night] *));
+@plugin "daisyui";
